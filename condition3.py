@@ -7,6 +7,7 @@ elif(a==6):
     print("hello")
 else:
     print("nope")
+    
 
 def percent(a,b):
     percentage=(a/b)*100
