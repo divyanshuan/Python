@@ -1,12 +1,7 @@
-s="hello world is her"
+# x= 120
+# x= int(str(x)[::-1])
+# print(x)
 
-
-def lastword (myly):
-    mylist= s.split(" ")
-    for x in reversed(mylist):
-        if x!="":
-            return len(x)
-
-
-m= lastword(s)
-print(m)
+x=-120
+x= int(str(-x)[::-1])
+print (-x)
