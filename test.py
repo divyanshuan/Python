@@ -1,18 +1,32 @@
-def findMaxConsecutiveOnes(nums):
-    count=0 #it will store number of consecutive during itretion
+def evennoofdigits(nums:list):
     result=0
     for i in range(0,len(nums)):
-        if nums[i]==1:
-            count+=1
+        k=str(nums[i])
+        if len(k)%2==0:
+            result+=1
+        
 
-        if nums[i]==0 or i==len(nums)-1:
-            print(i)
-            # print(max(result,count))
-            result=max(result,count)
-            count=0
-                
-    print(result)
+    return result 
 
 
+print(evennoofdigits([12,345,2,6,7896]))
 
-findMaxConsecutiveOnes([1,0,1,1,0,1])
+
+"""
+ def __init__(self):
+        self.n=0
+        self.m=0
+        self.mylist=[[""]*self.n]*self.m
+        # print(self.mylist)
+    
+    def createlist(self,n,m):
+        for i in range(0,m):
+            col=[]
+            for j in range(0,n):
+                k=input(f"enter the value at{i}:{j}=")
+                col.append(k)
+
+            self.mylist.append(col)    
+
+        print(self.mylist)
+"""
